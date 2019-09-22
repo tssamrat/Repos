@@ -15,12 +15,7 @@ stages:
               publishJUnitResults: true
               testResultsFiles: '**/surefire-reports/TEST-*.xml'
               javaHomeOption: 'JDKVersion'
-              mavenVersionOption: 'Default'
-          - script: echo 'build success'
-          - task: PublishBuildArtifacts@1
-            inputs:
-              PathtoPublish: '**/gameoflife-web/target/*.war'
-              ArtifactName: drop
+              mavenVersionOption: 'Default'         
               
   - stage: deploy
     jobs:
