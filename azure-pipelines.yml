@@ -19,7 +19,7 @@ stages:
           - script: echo 'build success'
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: '**/target/*.war'
+              PathtoPublish: '**/gameoflife-web/target/*.war'
               ArtifactName: drop
               
   - stage: deploy
